@@ -1,0 +1,37 @@
+let marks = 100;
+if (marks >= 90) {
+    grade = 'A';
+} else if (marks >= 80) {
+    grade = 'B';
+} else if (marks >= 70) {
+    grade = 'C';
+} else if (marks >= 60) {
+    grade = 'D';
+} else {
+    grade = 'F';
+}
+
+console.log("Marks: " + marks);
+console.log("Grade: " + grade);
+
+// Using switch statement
+let marks=100
+switch (grade) {
+    case 'A':
+        console.log("Excellent work!");
+        break;
+    case 'B':
+        console.log("Very good job!");
+        break;
+    case 'C':
+        console.log("Good effort!");
+        break;
+    case 'D':
+        console.log("You passed.");
+        break;
+    case 'F':
+        console.log("Better luck next time.");
+        break;
+    default:
+        console.log("Invalid grade.");
+}
