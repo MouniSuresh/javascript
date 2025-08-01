@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let employees = [];
+      function addEmp(id, name, salary, role) {
+        employees.push([id, name, salary, role]);
+      }
+      addEmp(1, "Dharshini", 1000000, "software developer");
+      addEmp(2, "sridevi", 80000, "CEO");
+      console.log(employees);
+
+      function calculatesal() {
+        let total = employee.reduce((sum, emp) => sum + emp.salary, 0);
+        console.log(total);
+      }
+      calculatesal();
+
+      function updateEmp(id, newDetails) {
+        let emp = employees.find((e = (addEmp) => e.id === id));
+        if (emp) {
+          Object.assign(emp, newDetail);
+          console.log("updated", employees);
+        } else {
+          console.log("emp not found");
+        }
+      }
+      updateEmp(1({ name: "sreesha" }));
+
+      function removeEmp(index) {
+        if (index >= 0 && index < employees.length) {
+          employee.splice(index, 1);
+          console.log("deleted", employees);
+        } else {
+          console.log("emp not found");
+        }
+      }
+      removeEmp(0);
+
+      function searchEmp() {
+        let input = prompt("Enter the emp name:");
+        if (input) {
+          console.log("Enter the name correctly");
+        }
+        let result = employees.filter(
+          (e) => e.nametoLowerCase() === Input.toLowercase()
+        );
+        if (result.length > 0) {
+          console.log("employee found");
+        } else {
+          console.log("employee not found");
+        }
+      }
+    </script>
+  </body>
+</html>
